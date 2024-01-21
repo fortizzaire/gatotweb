@@ -304,7 +304,7 @@ img {
   }
 
 /* Project */
-.project {
+/* .project {
     overflow: hidden;
     position: relative;
 }
@@ -332,6 +332,27 @@ img {
 
 .project:hover img {
     transform: translateY(-100%);
+} */
+.portfolio-item .service-icon {
+    background-color: var(--c-brand);
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+}
+
+.portfolio-item:hover img {
+    filter: brightness(50%);
+}
+
+.portfolio-item:hover .service-icon {
+    opacity: 1;
+    top: 50%;
 }
 
 /* Client */
